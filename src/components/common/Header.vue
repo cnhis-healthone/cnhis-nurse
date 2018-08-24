@@ -1,5 +1,6 @@
 <template>
-  <div class="app-header">
+ <el-header>
+<div class="app-header">
     <div id="banner" class="inline">
       <div class="inline logo">
       </div><div class="inline systemText">云健康 . 护士管理系统</div>
@@ -32,6 +33,8 @@
       </ul>
     </div>
   </div>
+ </el-header>
+  
 </template>
 
 <script>
@@ -143,11 +146,12 @@
   }
   .app-header #minMenu ul{
     height:100%;
-    width: 500px;
+    /* width: 500px; */
     margin: 0 auto;
   }
   .app-header ul.list-inline li{
     display: inline-block;
+    float:left
   }
   .app-header .header{
     position: relative;
@@ -155,13 +159,14 @@
     padding:0px;
   }
   .app-header .header a{
-    display:block;
+    display: block;
     text-align: center;
-    height:100%;
-    padding:18px 15px;
-    cursor:pointer;
+    height: 100%;
+    padding: 0px 24px;
+    cursor: pointer;
     color: #FFFFFF;
     text-decoration: none;
+    line-height: 56px;
   }
   .app-header .header a:hover{
     background-color: #045d95;
@@ -234,6 +239,9 @@
   .app-header .left_self .name{
     position: relative;
     top: 2px;
+  }
+  .el-header{
+    padding:0px 0px;
   }
 </style>
 
