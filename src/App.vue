@@ -25,7 +25,9 @@ export default {
   	height: 100%;
   	width: 100%;
   }
-  #app>div,#app>div>section{
+  #app>div,#app>div>section,#app>div>section main.el-main,
+  #app>div>section main.el-main>.el-row,
+  #app>div>section main.el-main>.el-row>.el-col{
   	height: 100%;
   }
   .el-container{
