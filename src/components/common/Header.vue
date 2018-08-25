@@ -25,9 +25,9 @@
           <router-link id="396" to="/message-center" class="button">
             <span class="headerbg320"></span><span>消息中心</span>
           </router-link>
-          <div class="messageSign">
+          <!--<div class="messageSign">
             <label class="label-normal">15</label>
-          </div>
+          </div>-->
         </li>
       </ul>
     </div>
