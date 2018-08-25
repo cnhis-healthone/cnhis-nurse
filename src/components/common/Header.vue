@@ -1,5 +1,4 @@
 <template>
- <el-header>
 <div class="app-header">
     <div id="banner" class="inline">
       <div class="inline logo">
@@ -33,7 +32,6 @@
       </ul>
     </div>
   </div>
- </el-header>
   
 </template>
 

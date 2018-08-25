@@ -19,9 +19,12 @@ let router = new Router({
       path: '/business-platform',
       component: BusinessPlatformIndex,
       children: [
-	      {
-	        path: '/business-platform/text',
-	        left: contain
+	      { 
+          path: '/business-platform/text',   //配置子路由路径
+          components:{
+            left: contain    //子路由重定向
+          }
+	        
 	       
 	      }
       ]

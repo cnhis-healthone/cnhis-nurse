@@ -1,5 +1,5 @@
 <template class="container">
-  <div class="container">
+  <div>
     <el-container>
 		 <el-header> <Header></Header></el-header>
 		  <el-container>
@@ -38,17 +38,15 @@
     const Index = {
       data(){
         return {
-			radio:[1],
-			msg :'ceshi'
-		};
+		  };
       },
       components: {
         Header,
         Footer
-      }
-    };
+			}
+};
 
-    export default Index;
+export default Index;
 </script>
 
 <style scoped>
@@ -60,5 +58,18 @@
 	.right-content{
 		width: 60%;
 		display: inline-block;
+	}
+	.el-header{
+		padding: 0px 0px;
+	}
+	.el-main{
+		padding: 0px 0px
+	}
+	.el-footer{
+		height: 25px!important;
+		padding: 0px 0px;
+		text-align: center;
+		background: #3eafe0;
+		color: #ffffff
 	}
 </style>
