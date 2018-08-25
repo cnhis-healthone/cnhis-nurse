@@ -17,11 +17,11 @@
 		      		  <el-menu
 						      default-active="2"
 						      class="el-menu-vertical-demo"
-						      background-color="#545c64"
-						      text-color="#fff"
-						      active-text-color="#ffd04b">
-						      <el-submenu index="1">
-						        <template slot="title">
+						      background-color="#fff"
+						      text-color="#000"
+						      active-text-color="#3eafe0">
+						      <el-menu-item index="1">
+						        <!--<template slot="title">
 						          <i class="el-icon-location"></i>
 						          <span>导航一</span>
 						        </template>
@@ -36,24 +36,41 @@
 						        <el-submenu index="1-4">
 						          <template slot="title">选项4</template>
 						          <el-menu-item index="1-4-1">选项1</el-menu-item>
-						        </el-submenu>
-						      </el-submenu>
+						        </el-submenu>-->
+						        <i class="el-icon-location"></i>
+						        
+						        <span>
+						        	<router-link id="3931" to="/business-platform/text" class="button">
+						            <span></span><span>导航一</span>
+						          </router-link>
+						        </span>
+						      </el-menu-item>
 						      <el-menu-item index="2">
 						        <i class="el-icon-menu"></i>
 						        
 						        <span>
-						        	<router-link id="393" to="/business-platform/text" class="button">
-						            <span class="headerbg"></span><span>导航二</span>
+						        	<router-link id="3932" to="/business-platform/text1" class="button">
+						            <span></span><span>导航二</span>
 						          </router-link>
 						        </span>
 						      </el-menu-item>
 						      <el-menu-item index="3" disabled>
 						        <i class="el-icon-document"></i>
-						        <span slot="title">导航三</span>
+						        
+						        <span>
+						        	<router-link id="3933" to="/business-platform/text2" class="button">
+						            <span></span><span>导航三</span>
+						          </router-link>
+						        </span>
 						      </el-menu-item>
 						      <el-menu-item index="4">
 						        <i class="el-icon-setting"></i>
-						        <span slot="title">导航四</span>
+						        
+						        <span>
+						        	<router-link id="3934" to="/business-platform/text3" class="button">
+						            <span></span><span>导航四</span>
+						          </router-link>
+						        </span>
 						      </el-menu-item>
 						    </el-menu>
 						   </div></el-col>
