@@ -20,58 +20,32 @@
 						      background-color="#fff"
 						      text-color="#000"
 						      active-text-color="#3eafe0">
-						      <el-menu-item index="1">
-						        <!--<template slot="title">
+						      
+						      <el-submenu  v-for="(item , index) in menuData" v-if="item.children.length>0" :index="index">
+						        <template slot="title">
 						          <i class="el-icon-location"></i>
-						          <span>导航一</span>
+						          <span>{{item.text}}</span>
 						        </template>
-						        <el-menu-item-group>
-						          <template slot="title">分组一</template>
-						          <el-menu-item index="1-1">选项1</el-menu-item>
-						          <el-menu-item index="1-2">选项2</el-menu-item>
-						        </el-menu-item-group>
-						        <el-menu-item-group title="分组2">
-						          <el-menu-item index="1-3">选项3</el-menu-item>
-						        </el-menu-item-group>
-						        <el-submenu index="1-4">
-						          <template slot="title">选项4</template>
-						          <el-menu-item index="1-4-1">选项1</el-menu-item>
-						        </el-submenu>-->
-						        <i class="el-icon-location"></i>
-						        
-						        <span>
-						        	<router-link id="3931" to="/business-platform/text" class="button">
-						            <span></span><span>导航一</span>
-						          </router-link>
-						        </span>
-						      </el-menu-item>
-						      <el-menu-item index="2">
+						          <el-menu-item v-for="(child , cIndex) in item.children" :index="child.id">
+						          	<span>
+								        	<router-link :id="child.id" :to="child.attributes.url" class="button">
+								            <span></span><span>{{child.text}}</span>
+								          </router-link>
+								        </span>
+						          </el-menu-item>
+						      </el-submenu>
+						      
+						      <el-menu-item index="2" v-else>
 						        <i class="el-icon-menu"></i>
 						        
 						        <span>
-						        	<router-link id="3932" to="/business-platform/text1" class="button">
-						            <span></span><span>导航二</span>
+						        	<router-link id="393" to="/business-platform/text" class="button">
+						            <span></span><span>{{item.text}}</span>
 						          </router-link>
 						        </span>
 						      </el-menu-item>
-						      <el-menu-item index="3" disabled>
-						        <i class="el-icon-document"></i>
-						        
-						        <span>
-						        	<router-link id="3933" to="/business-platform/text2" class="button">
-						            <span></span><span>导航三</span>
-						          </router-link>
-						        </span>
-						      </el-menu-item>
-						      <el-menu-item index="4">
-						        <i class="el-icon-setting"></i>
-						        
-						        <span>
-						        	<router-link id="3934" to="/business-platform/text3" class="button">
-						            <span></span><span>导航四</span>
-						          </router-link>
-						        </span>
-						      </el-menu-item>
+						      
+						      
 						    </el-menu>
 						   </div></el-col>
 					      <el-col :span="21">
@@ -93,16 +67,19 @@
 <script>
     import Header from '../../components/common/Header.vue';
     import Footer from '../../components/common/Footer.vue';
-
+		var goodsData = require('@/components/datas/left_json.json');
     const Index = {
       data(){
         return {
-        	
+        	menuData:goodsData
 		  	};
       },
       components: {
         Header,
         Footer
+			},
+			created: function(){
+				console.log(this.menuData);
 			}
 };
 
