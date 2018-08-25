@@ -1,12 +1,12 @@
 <template class="container">
   <div>
-    <el-container>
+    <el-container id='order-list'>
 		 <el-header> <Header></Header></el-header>
 		  <el-container>
 		    <el-container>
 		      <el-main>
 		      	<el-row>
-						  <el-col :span="4"><div class="grid-content bg-purple-dark">
+						  <el-col :span="3"><div class="grid-content bg-purple-dark">
 						  	<ul>
 		      				<li>
 		      					 <router-link id="393" to="/business-platform/text" class="button">
@@ -15,7 +15,7 @@
 		      					</li>
 		      		  </ul>
 						    </div></el-col>
-						      <el-col :span="20">
+						      <el-col :span="21">
 						      	<router-view name='left'></router-view>
 						        <div class="grid-content bg-purple-dark">
 						  	    
@@ -72,4 +72,17 @@ export default Index;
 		background: #3eafe0;
 		color: #ffffff
 	}
+	 .el-aside {
+    background-color: #D3DCE6;
+    color: #333;
+    text-align: center;
+    line-height: 200px;
+  }
+  
+  .el-main {
+    background-color: #E9EEF3;
+    color: #333;
+    text-align: center;
+    line-height: 160px;
+  }
 </style>

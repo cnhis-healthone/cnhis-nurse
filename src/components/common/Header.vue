@@ -8,22 +8,22 @@
       <ul class="list-unstyle list-inline">
         <li class="header checkMinMenu" id="ywpt">
           <router-link id="393" to="/business-platform" class="button">
-            <span class="headerbg"></span><span>业务平台</span>
+            <span class="headerbg317"></span><span>业务平台</span>
           </router-link>
         </li>
         <li class="header" id="tjfx">
           <router-link id="394" to="/statistical-analysis" class="button">
-            <span class="headerbg"></span><span>统计分析</span>
+            <span class="headerbg318"></span><span>统计分析</span>
           </router-link>
         </li>
         <li class="header" id="cssz">
           <router-link id="395" to="/parameter-settingIndex" class="button">
-            <span class="headerbg"></span><span>参数设置</span>
+            <span class="headerbg319"></span><span>参数设置</span>
           </router-link>
         </li>
         <li class="header" id="xxzx">
           <router-link id="396" to="/message-center" class="button">
-            <span class="headerbg"></span><span>消息中心</span>
+            <span class="headerbg320"></span><span>消息中心</span>
           </router-link>
           <div class="messageSign">
             <label class="label-normal">15</label>
@@ -123,28 +123,26 @@
     background: url(../../assets/theme/sky-blue/topleft.png) no-repeat;
   }
   .app-header #banner .logo {
-    position: relative;
+   position: relative;
     top: 12px;
     margin: 0 5px 0 25px;
+    float: left;
   }
   .app-header #banner .systemText {
     font-size: 1.5rem;
     line-height: 60px;
-    position:relative;
-    bottom:5px;
+    position: relative;
+    bottom: 0px;
+    float: right;
   }
   .app-header #minMenu {
     position: relative;
     top:0px;
     height: 100%;
-    margin-left: 50px;
-  }
-  .app-header #minMenu .headerbg{
-
+    float: left
   }
   .app-header #minMenu ul{
     height:100%;
-    /* width: 500px; */
     margin: 0 auto;
   }
   .app-header ul.list-inline li{
@@ -274,7 +272,48 @@
     text-align: center;
     line-height: 60px;
   }
-  
+  .checkMinMenu {
+    background: #045d95;
+    border-left: 1px solid #035589;
+    border-right: 1px solid #035589;
+}
+
+.header .headerbg317{
+	background: url('../../assets/theme/sky-blue/header.png') no-repeat -29px -11px;
+    display: inline-block;
+    width: 16px;
+    height: 15px;
+    position: relative;
+    margin-right: 5px;
+    top: 1px;
+}
+.header .headerbg318 {
+    background: url('../../assets/theme/sky-blue/header.png') no-repeat -154px -9px;
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    position: relative;
+    margin-right: 5px;
+    top: 2px;
+}
+.header .headerbg319 {
+    background: url('../../assets/theme/sky-blue/header.png') no-repeat -282px -9px;
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    position: relative;
+    margin-right: 5px;
+    top: 3px;
+}
+.header .headerbg320 {
+    background: url('../../assets/theme/sky-blue/header.png') no-repeat -408px -13px;
+    display: inline-block;
+    width: 18px;
+    height: 12px;
+    position: relative;
+    margin-right: 5px;
+    top: 1px;
+}
 </style>
 
 
