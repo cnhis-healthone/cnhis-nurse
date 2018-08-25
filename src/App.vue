@@ -15,8 +15,25 @@ export default {
 </script>
 
 <style>
-  html body{
+  html,html body{
     margin: 0px;
     padding: 0px;
+    height: 100%;
+    width: 100%;
+  }
+  #app{
+  	height: 100%;
+  	width: 100%;
+  }
+  #app>div,#app>div>section{
+  	height: 100%;
+  }
+  .el-container{
+  	height: 100%;
+  	width: 100%;
+  }
+  .el-main{
+  	width: 100%;
+  	height: calc(100% - 60px);
   }
 </style>
