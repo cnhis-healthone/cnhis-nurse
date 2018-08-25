@@ -16,7 +16,7 @@ let router = new Router({
   routes: [
     {
       path: '/',
-      redirect: '/business-platform'
+      redirect: '/business-platform/text'
     },
     {
       path: '/business-platform',
