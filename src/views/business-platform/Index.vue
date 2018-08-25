@@ -1,33 +1,10 @@
 <template class="container">
   <div class="container">
-    <el-container>
-		 <el-header> <Header></Header></el-header>
-		  <el-container>
-		    <el-container>
-		      <el-main>
-		      	<el-row>
-						  <el-col :span="4"><div class="grid-content bg-purple-dark">
-						  	<ul>
-		      				<li>
-		      					 <router-link id="393" to="/business-platform/text" class="button">
-						            <span class="headerbg"></span><span>左侧树测试1</span>
-						          </router-link>
-		      					</li>
-		      		  </ul>
-						    </div></el-col>
-						      <el-col :span="20">
-						      	<router-view name='left'></router-view>
-						        <div class="grid-content bg-purple-dark">
-						  	    
-						    </div>
-						  </el-col>
-						</el-row>
-		      	<router-view ></router-view>
-		      </el-main>
-		      <el-footer><Footer></Footer></el-footer>
-		    </el-container>
-		  </el-container>
-		</el-container>
+    <Header></Header>
+    <router-view></router-view>
+    <Footer></Footer>
+	<el-radio v-model="radio" label="1">备选项</el-radio>
+	<el-radio v-model="radio" label="2">备选项</el-radio>
   </div>
 </template>
 
@@ -38,8 +15,7 @@
     const Index = {
       data(){
         return {
-			radio:[1],
-			msg :'ceshi'
+			radio: '1'
 		};
       },
       components: {
@@ -50,15 +26,3 @@
 
     export default Index;
 </script>
-
-<style scoped>
-	.panel-content{
-		width: 20%;
-		display: inline-block;
-	}
-	
-	.right-content{
-		width: 60%;
-		display: inline-block;
-	}
-</style>

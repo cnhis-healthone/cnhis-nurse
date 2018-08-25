@@ -1,5 +1,5 @@
 <template>
-  <div class="">
+  <div class="app-footer">
     <div>
       <span>深圳市坐标软件开发有限公司</span>
     </div>
@@ -19,5 +19,15 @@
 </script>
 
 <style scoped>
-  
+  .app-footer {
+    width: 100%;
+    text-align: center;
+    background: #3EAFE0;
+    color: #fff;
+    clear: both;
+    font-size: .875rem;
+    line-height: 25px;
+    position: absolute;
+    bottom: 0;
+  }
 </style>
