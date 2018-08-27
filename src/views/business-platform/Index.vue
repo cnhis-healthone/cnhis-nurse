@@ -21,12 +21,12 @@
 						      text-color="#000"
 						      active-text-color="#3eafe0">
 						      
-						      <el-submenu  v-for="(item , index) in menuData" v-if="item.children.length>0" :index="index">
+						      <el-submenu  v-for="item  in menuData" v-if="item.children.length>0" :index="item.id" :key="item.id">
 						        <template slot="title">
 						          <i class="el-icon-location"></i>
 						          <span>{{item.text}}</span>
 						        </template>
-						          <el-menu-item v-for="(child , cIndex) in item.children" :index="child.id">
+						          <el-menu-item v-for="child in item.children" :index="child.id" :key="child.id">
 						          	<span>
 								        	<router-link :id="child.id" :to="child.attributes.url" class="button">
 								            <span></span><span>{{child.text}}</span>
